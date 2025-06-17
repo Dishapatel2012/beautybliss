@@ -1,0 +1,174 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+{% block title %}Face Product{% endblock title %}
+
+
+{% block main-content %}
+
+<section class="products py-5 bg-light" id="products" style="margin-top:100px">
+    <div class="container">
+        <div class="row g-4">
+            
+            <!-- Product 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-box p-3 bg-white shadow-sm">
+                    <div class="image text-center">
+                        <a href="{% url "category" 'CL' %}">
+                            <img src="{% static 'images/product/Cetaphil Cleanser.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Cleanser">
+                        </a>
+                       
+                    </div>
+                    <div class="content text-center mt-3">
+                        <h5>Cleanser</h5>
+                    
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Product 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-box p-3 bg-white shadow-sm">
+                    <div class="image text-center">
+                        <a href="{% url "category" 'SM' %}">
+                            <img src="{% static 'images/product/Minimalist serum.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Serum">
+                        </a>
+                        
+                    </div>
+                    <div class="content text-center mt-3">
+                        <h5>Serum</h5>
+                        
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Product 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="product-box p-3 bg-white shadow-sm">
+                  <div class="image text-center">
+                      <a href="{% url "category" 'FO' %}">
+                          <img src="{% static 'images/product/Farmacy Honey Grail Face Oil.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Face Oil">
+                      </a>
+                      
+                  </div>
+                  <div class="content text-center mt-3">
+                      <h5>Face Oil</h5>
+                      
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Product 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-box p-3 bg-white shadow-sm">
+                <div class="image text-center">
+                    <a href="{% url "category" 'SS' %}">
+                        <img src="{% static 'images/product/The derma SPF 50 1% Hyaluronic Sunscreen.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Wash">
+                    </a>
+                    
+                </div>
+                <div class="content text-center mt-3">
+                    <h5>SunScreen</h5>
+                    
+                </div>
+            </div>
+        </div>
+  
+        <!-- Product 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="product-box p-3 bg-white shadow-sm">
+              <div class="image text-center">
+                  <a href="{% url "category" 'MZ' %}">
+                      <img src="{% static 'images/product/Quench Ultra Light Gel Moisturizer.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Scrub">
+                  </a>
+                  
+              </div>
+              <div class="content text-center mt-3">
+                  <h5>Moisturizer</h5>
+                  
+              </div>
+          </div>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="product-box p-3 bg-white shadow-sm">
+
+            <div class="image text-center">
+                <a href="{% url "category" 'TR' %}">
+                    <img src="{% static 'images/product/TIRTIR Milk Skin Toner.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Lotion">
+                </a>
+                
+            </div>
+            <div class="content text-center mt-3">
+                <h5>Toner</h5>
+                
+            </div>
+        </div>
+    </div>
+  
+    <!-- Product 2 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="product-box p-3 bg-white shadow-sm">
+
+          <div class="image text-center">
+              <a href="{% url "category" 'FM' %}">
+                  <img src="{% static 'images/product/Matra Coffee niacinamide face mask.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="shampoo">
+              </a>
+              
+          </div>
+          <div class="content text-center mt-3">
+              <h5>Face Mask</h5>
+              
+          </div>
+      </div>
+  </div>
+  
+  <!-- Product 2 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'EC' %}">
+                <img src="{% static 'images/product/Swosh Under Eye Cream.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Conditioner">
+            </a>
+           
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Eye Cream</h5>
+            
+        </div>
+    </div>
+  </div>
+  
+  <!-- Product 2 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'FW' %}">
+                <img src="{% static 'images/product/Himalaya Purifying Neem Face Wash.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Hair Mask">
+            </a>
+           
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Face Wash</h5>
+            
+        </div>
+    </div>
+  </div>
+   </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Share Script -->
+<script>
+    document.querySelectorAll('.share-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            let productName = this.getAttribute('data-name');
+            let productPrice = this.getAttribute('data-price');
+            let message = `Hello, I'm interested in purchasing the *${productName}*. Can you provide me with more details?`;
+            let whatsappNumber = '917778975445'; // Replace with actual number
+            let whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    });
+  </script>
+  {% endblock main-content %}

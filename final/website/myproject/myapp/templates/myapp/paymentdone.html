@@ -1,0 +1,8 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+{% block title %}checkout{% endblock title %}
+{% block main-content %}  
+<a href="{% url 'download_invoice' order_id=order.id %}" class="btn btn-primary">
+    Download Invoice
+</a>
+{% endblock main-content %}

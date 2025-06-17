@@ -1,0 +1,252 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+{% block title %}Makeup product{% endblock title %}
+
+{% block main-content %}
+
+<section class="products py-5 bg-light" id="products"style="margin-top:100px">
+    <div class="container">
+        <div class="row g-4">
+            
+            <!-- Product 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-box p-3 bg-white shadow-sm">
+        
+                    <div class="image text-center">
+                        <a href="{% url "category" 'PR' %}">
+                            <img src="{% static 'images/product/power gip primer.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Cleanser">
+                        </a>
+                        
+                    </div>
+                    <div class="content text-center mt-3">
+                        <h5>Primer</h5> 
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Product 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-box p-3 bg-white shadow-sm">
+        
+                    <div class="image text-center">
+                        <a href="{% url "category" 'FD' %}">
+                            <img src="{% static 'images/product/Insight foundation.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Serum">
+                        </a>
+                        
+                    </div>
+                    <div class="content text-center mt-3">
+                        <h5>Foundation</h5>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Product 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="product-box p-3 bg-white shadow-sm">
+        
+                  <div class="image text-center">
+                      <a href="{% url "category" 'CR' %}">
+                          <img src="{% static 'images/product/Dr dense glow younger body concealer.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Face Oil">
+                      </a>
+                      
+                  </div>
+                  <div class="content text-center mt-3">
+                      <h5>Concealer</h5>
+                      
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Product 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-box p-3 bg-white shadow-sm">
+    
+                <div class="image text-center">
+                    <a href="{% url "category" 'PR' %}">
+                        <img src="{% static 'images/product/Lakme Powder.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Wash">
+                    </a>
+                    
+                </div>
+                <div class="content text-center mt-3">
+                    <h5>Powder</h5>
+                    
+                </div>
+            </div>
+        </div>
+  
+        <!-- Product 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="product-box p-3 bg-white shadow-sm">
+    
+              <div class="image text-center">
+                  <a href="{% url "category" 'BU' %}">
+                      <img src="{% static 'images/product/Swiss beauty Blush.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Scrub">
+                  </a>
+              </div>
+              <div class="content text-center mt-3">
+                  <h5>Blush</h5>
+                  
+              </div>
+          </div>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="product-box p-3 bg-white shadow-sm">
+
+            <div class="image text-center">
+                <a href="{% url "category" 'BZ' %}">
+                    <img src="{% static 'images/product/NYX Professional Makeup Matte Bronzer.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Lotion">
+                </a>
+                
+            </div>
+            <div class="content text-center mt-3">
+                <h5>Bronzer</h5>
+                
+            </div>
+        </div>
+    </div>
+  
+    <!-- Product 2 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="product-box p-3 bg-white shadow-sm">
+
+          <div class="image text-center">
+              <a href="{% url "category" 'HG' %}">
+                  <img src="{% static 'images/product/Insight Highlighter.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="shampoo">
+              </a>
+              
+          </div>
+          <div class="content text-center mt-3">
+              <h5>Highlighter</h5>
+              
+          </div>
+      </div>
+  </div>
+  
+  <!-- Product 2 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'ES' %}">
+                <img src="{% static 'images/product/Lakme 9 to  5 Eye Shadow.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Conditioner">
+            </a>
+            
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Eye Shadow</h5>
+           
+        </div>
+    </div>
+  </div>
+  
+  <!-- Product 2 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'EL' %}">
+                <img src="{% static 'images/product/Lakmé Ultimate Glam Eyeliner.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Hair Mask">
+            </a>
+           
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Eyeliner</h5>
+            
+        </div>
+    </div>
+  </div>
+  
+  <!-- Product 2 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'MS' %}">
+                <img src="{% static 'images/product/Mars Mascara.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Primer">
+            </a>
+            
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Mascra</h5>
+            
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'LB' %}">
+                <img src="{% static 'images/product/Swiss Beauty Kiss Kandy Lip Balm.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Primer">
+            </a>
+            
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Lip Balm</h5>
+            
+        </div>
+    </div>
+  </div>
+  
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'LS' %}">
+                <img src="{% static 'images/product/Mamaearth Moisture Matte Longstay Lipstick.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Primer">
+            </a>
+            
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Lip Stick</h5>
+            
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'LG' %}">
+                <img src="{% static 'images/product/Insight Long Wear Color Rich Lip Gloss.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Primer">
+            </a>
+            
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Lip Gloss</h5>
+            
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'SP' %}">
+                <img src="{% static 'images/product/Lakme Vitamnin C superglow setting spray.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Primer">
+            </a>
+            
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Setting Spray</h5>
+            
+        </div>
+    </div>
+  </div>
+
+  </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Share Script -->
+<script>
+    document.querySelectorAll('.share-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            let productName = this.getAttribute('data-name');
+            let productPrice = this.getAttribute('data-price');
+            let message = `Hello, I'm interested in purchasing the *${productName}* for ${productPrice}. Can you provide me with more details?`;
+            let whatsappNumber = '917778975445'; // Replace with actual number
+            let whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    });
+  </script>
+  {% endblock main-content %}

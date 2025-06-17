@@ -1,0 +1,319 @@
+{% extends "myapp/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block main-content %}
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'images/b1.png' %}" class="d-block w-100" style="max-height: 700px; object-fit: cover;" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'images/b2.png' %}" class="d-block w-100" style="max-height: 700px; object-fit: cover;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/b3.png' %}" class="d-block w-100" style="max-height: 700px; object-fit: cover;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/b4.png' %}" class="d-block w-100" style="max-height: 700px; object-fit: cover;" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Features Section -->
+  <section class="features-section text-dark py-5 mt-1" style="background-color: #fbfaf1;">
+    <div class="container">
+        <div class="row text-center">
+            <!-- Free Delivery -->
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-box">
+                    <i class="fas fa-truck"></i>
+                    <h5>Free Delivery</h5>
+                    <p>Free product delivery after ₹500 and get discounts on selected products.</p>
+                </div>
+            </div>
+  
+            <!-- 7 Days Return -->
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-box">
+                    <i class="fas fa-undo-alt"></i>
+                    <h5>7 Days Return</h5>
+                    <p>Product can be returned by following the return policy with terms and conditions.</p>
+                </div>
+            </div>
+  
+            <!-- Secure Payment -->
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h5>Payment Secure</h5>
+                    <p>Payments are secure, and your card information will not be disclosed.</p>
+                </div>
+            </div>
+  
+            <!-- Original Product -->
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-box">
+                    <i class="fas fa-box"></i>
+                    <h5>Original Product</h5>
+                    <p>You will get original and authentic products ensuring top quality.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!-- Latest Products Section -->
+<section class="products py-5 bg-light" id="products">
+  <div class="container">
+      <h1 class="heading text-center mb-4"> Latest <span class="text-primary">Products</span> </h1>
+      <div class="row g-4">
+          
+          <!-- Product 1 -->
+          <div class="col-md-6 col-lg-4">
+              <div class="product-box p-3 bg-white shadow-sm">
+        
+                  <div class="image text-center">
+                      <a href="{% url "category" 'CL' %}">
+                          <img src="{% static 'images/product/Cetaphil Cleanser.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Cleanser">
+                      </a>
+                      <div class="icons mt-2">
+                          <a href="#" class="btn share-btn w-100" data-name="Cleanser" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                            <i class="fas fa-share"></i></a>
+                        </div>
+                  </div>
+                  <div class="content text-center mt-3">
+                      <h5>Cleanser</h5>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-md-6 col-lg-4">
+              <div class="product-box p-3 bg-white shadow-sm">
+        
+                  <div class="image text-center">
+                      <a href="{% url "category" 'SM' %}">
+                          <img src="{% static 'images/product/Minimalist serum.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Serum">
+                      </a>
+                      <div class="icons mt-2">
+                        <a href="#" class="btn share-btn w-100" data-name="Serum" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                            <i class="fas fa-share"></i></a>
+                      </div>
+                  </div>
+                  <div class="content text-center mt-3">
+                      <h5>Serum</h5>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product-box p-3 bg-white shadow-sm">
+    
+                <div class="image text-center">
+                    <a href="{% url "category" 'FO' %}">
+                        <img src="{% static 'images/product/Farmacy Honey Grail Face Oil.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Face Oil">
+                    </a>
+                    <div class="icons mt-2">
+                        <a href="#" class="btn share-btn w-100" data-name="Face Oil" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                            <i class="fas fa-share"></i></a>
+                    </div>
+                </div>
+                <div class="content text-center mt-3">
+                    <h5>Face Oil</h5>
+              </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="product-box p-3 bg-white shadow-sm">
+    
+              <div class="image text-center">
+                  <a href="{% url "category" 'BW' %}">
+                      <img src="{% static 'images/product/fiama body wash.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Wash">
+                  </a>
+                  <div class="icons mt-2">
+                    <a href="#" class="btn share-btn w-100" data-name="Body Wash" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                        <i class="fas fa-share"></i></a>
+                  </div>
+              </div>
+              <div class="content text-center mt-3">
+                  <h5>Body Wash</h5>
+              </div>
+          </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="product-box p-3 bg-white shadow-sm">
+
+            <div class="image text-center">
+                <a href="{% url "category" 'BS' %}">
+                    <img src="{% static 'images/product/The mCaffeine Coffee Body Scrub.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Scrub">
+                </a>
+                <div class="icons mt-2">
+                    <a href="#" class="btn share-btn w-100" data-name="Body Scrub" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                        <i class="fas fa-share"></i></a>
+                </div>
+            </div>
+            <div class="content text-center mt-3">
+                <h5>Body Scrub</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="product-box p-3 bg-white shadow-sm">
+
+          <div class="image text-center">
+              <a href="{% url "category" 'BL' %}">
+                  <img src="{% static 'images/product/Parachute Advansed Deep Nourish Body Lotion.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Body Lotion">
+              </a>
+              <div class="icons mt-2">
+                <a href="#" class="btn share-btn w-100" data-name="Body Lotion" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                    <i class="fas fa-share"></i></a>
+              </div>
+          </div>
+          <div class="content text-center mt-3">
+              <h5>Body Lotion</h5>
+         </div>
+      </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="product-box p-3 bg-white shadow-sm">
+        <div class="image text-center">
+            <a href="{% url "category" 'SH' %}">
+                <img src="{% static 'images/product/Tresemme kertin smooth shampoo.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="shampoo">
+            </a>
+            <div class="icons mt-2">
+                <a href="#" class="btn share-btn w-100" data-name="shampoo" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                    <i class="fas fa-share"></i></a>
+            </div>
+        </div>
+        <div class="content text-center mt-3">
+            <h5>Shampoo</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-md-6 col-lg-4">
+  <div class="product-box p-3 bg-white shadow-sm">
+      <div class="image text-center">
+          <a href="{% url "category" 'CD' %}">
+              <img src="{% static 'images/product/Pantine silk and smooth conditioner.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Conditioner">
+          </a>
+          <div class="icons mt-2">
+            <a href="#" class="btn share-btn w-100" data-name="Conditioner" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                <i class="fas fa-share"></i></a>
+          </div>
+      </div>
+      <div class="content text-center mt-3">
+          <h5>Conditioner</h5>
+     </div>
+  </div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-md-6 col-lg-4">
+  <div class="product-box p-3 bg-white shadow-sm">
+      <div class="image text-center">
+          <a href="{% url "category" 'HM' %}">
+              <img src="{% static 'images/product/The Karseell Collagen Hair Mask.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Hair Mask">
+          </a>
+          <div class="icons mt-2">
+            <a href="#" class="btn share-btn w-100" data-name="Hair Mask" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                <i class="fas fa-share"></i></a>
+          </div>
+      </div>
+      <div class="content text-center mt-3">
+          <h5>Hair Mask</h5>
+      </div>
+  </div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-md-6 col-lg-4">
+  <div class="product-box p-3 bg-white shadow-sm">
+      <div class="image text-center">
+          <a href="{% url "category" 'PM' %}">
+              <img src="{% static 'images/product/power gip primer.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Primer">
+          </a>
+          <div class="icons mt-2">
+            <a href="#" class="btn share-btn w-100" data-name="Primer" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                <i class="fas fa-share"></i></a>
+          </div>
+      </div>
+      <div class="content text-center mt-3">
+          <h5>Primer</h5>
+        </div>
+  </div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-md-6 col-lg-4">
+  <div class="product-box p-3 bg-white shadow-sm">
+      <div class="image text-center">
+          <a href="{% url "category" 'FD' %}">
+              <img src="{% static 'images/product/Insight foundation.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Foundation">
+          </a>
+          <div class="icons mt-2">
+            <a href="#" class="btn share-btn w-100" data-name="Foundation" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                <i class="fas fa-share"></i></a>
+          </div>
+      </div>
+      <div class="content text-center mt-3">
+          <h5>Foundation</h5>
+          
+      </div>
+  </div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-md-6 col-lg-4">
+  <div class="product-box p-3 bg-white shadow-sm">
+      <div class="image text-center">
+          <a href="{% url "category" 'CR' %}">
+              <img src="{% static 'images/product/Swiss beauty liquid concealer.jpg' %}" class="img-fluid" style="height: 250px; object-fit: cover;" alt="Concealer">
+          </a>
+          <div class="icons mt-2">
+            <a href="#" class="btn share-btn w-100" data-name="Concealer" style="background-color: #b08a63; color: #333; border-color: #e6e2d3;">
+                <i class="fas fa-share"></i></a>
+          </div>
+      </div>
+      <div class="content text-center mt-3">
+          <h5>Concealer</h5>
+      </div>
+  </div>
+</div>
+      </div>
+  </div>
+</section>
+
+<!-- WhatsApp Share Script -->
+<script>
+  document.querySelectorAll('.share-btn').forEach(button => {
+      button.addEventListener('click', function () {
+          let productName = this.getAttribute('data-name');
+          let productPrice = this.getAttribute('data-price');
+          let message = `Hello, I'm interested in purchasing the *${productName}* for ${productPrice}. Can you provide me with more details?`;
+          let whatsappNumber = '917778975445'; // Replace with actual number
+          let whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+          window.open(whatsappUrl, '_blank');
+      });
+  });
+</script>
+  
+{% endblock main-content %}
